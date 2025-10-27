@@ -50,3 +50,85 @@ header {
     width: 100%;
     z-index: 100;
 }
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--text-color);
+    padding: 17px 20px;
+    border-radius: 0.8rem;
+}
+
+.logo {
+    font-size: 1.7rem;
+    font-weight: 400;
+    color: var(--bg-color);
+    text-transform: uppercase;
+    font-family: var(--font-family-2);
+}
+
+.logo span {
+    color: var(--main-color);
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    column-gap: 1.5rem;
+}
+
+.nav-link {
+    font-size: 0.88rem;
+    color: var(--text-alter-color);
+    transition: 0.4s all cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.nav-link:hover {
+    color: var(--bg-color);
+    transition: 0.4s all cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.nav-icons {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    
+}
+
+.nav-icons .fa-solid {
+    color: var(--bg-color);
+    font-size: 20px;
+    border-radius: 50%;
+}
+.nav-icons .fa-user {
+    padding: 7px;
+    background: var(--main-color);
+   
+    
+}
+.nav-icons .fa-user:hover {
+    background: var(--second-color);
+    transition: 0.3 ease;
+}
+
+/* -----------------MENU--------------------- */
+
+.menu-icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 5px;
+    cursor: pointer;
+    row-gap: 5px;
+    cursor: pointer;
+    z-index: 200;
+    transition: 0.3s;
+}
+
+.menu div {
+    display: block;
+    background-color: var(--bg-color);
+    height: 2px;
+    width: 23px;
+    transition: 0.3s;
+}
