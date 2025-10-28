@@ -98,12 +98,18 @@ header {
 .nav-icons .fa-solid {
     color: var(--bg-color);
     font-size: 20px;
-    border-radius: 50%;
 }
 .nav-icons .fa-user {
-    padding: 7px;
-    background: var(--main-color);
    
+     display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 35px;
+    height: 35px;
+    background: var(--main-color);
+    color: var(--bg-color);
+    border-radius: 50%;
+    font-size: 18px;
     
 }
 .nav-icons .fa-user:hover {
@@ -125,10 +131,24 @@ header {
     transition: 0.3s;
 }
 
-.menu div {
+.menu-icon div {
     display: block;
     background-color: var(--bg-color);
     height: 2px;
     width: 23px;
     transition: 0.3s;
+}
+
+/* ------------Making cross with menu lines------- */
+
+.move .line1 {
+    transform: rotate(-45deg) translate(-5px, 5px);
+}
+
+.move .line2 {
+   opacity: 0;
+}
+
+.move .line3 {
+    transform: rotate(45deg) translate(-5px, -5px);
 }
