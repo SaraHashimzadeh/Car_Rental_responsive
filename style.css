@@ -303,3 +303,32 @@ header {
     margin-top: 7px;
     color: var(--text-alter-color);
 }
+
+.rentals .heading {
+    text-align: center;
+}
+
+.heading p {
+    max-width: 550px;
+    width: 100%;
+    font-size: 0.9rem;
+    font-family: var(--poppins-font);
+    margin: 1rem auto;
+}
+
+.rentals-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px,auto));
+    gap: 1.5rem;
+}
+.rental-box {
+    background: var(--container-color);
+    padding: 15px;
+    border-radius: 10px;
+    transition: transform 0.5s ease;
+}
+
+.rental-box:hover {
+    transform: translateY(-10px);
+    transition: transform 0.5s ease;
+}
