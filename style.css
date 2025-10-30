@@ -332,3 +332,79 @@ header {
     transform: translateY(-10px);
     transition: transform 0.5s ease;
 }
+
+.rental-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.rental-top h3 {
+    display: inline-block;
+    font-family: var(--poppins-font);
+    background: #fff;
+    font-size: 0.77rem;
+    padding: 4px 7px;
+    border-radius: 4px;
+    font-weight: 600;
+}
+
+.rental-top .fa-heart{
+    font-size: 20px;
+    color: var(--text-alter-color);
+    cursor: pointer;
+}
+
+.rental-top .fa-heart:hover{
+    color: var(--main-color);
+    transition: 0.3s ease;
+}
+
+.rental-box img {
+    margin: 1.8rem 0 1 rem;
+    height: 74px;
+    object-fit: contain;
+    object-position: center;
+}
+
+.rental-box h2 {
+    font-size: large 1.4rem;
+    font-weight: 500;
+}
+
+.rental-box h4 {
+    font-size: 0.94rem;
+    font-weight: 500;
+    color: var(--text-alter-color);
+    margin-top: 5px;
+}
+
+.price-btn {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+.price-btn p  {
+    font-size: 0.97rem;
+}
+
+.price-btn p span {
+    color: var(--text-alter-color);
+}
+
+.rental-btn {
+    background: var(--text-color);
+    color: var(--bg-color);
+    padding: 7px 10px;
+    font-size: 0.97rem;
+    border-radius: 4px;
+    transition: 0.4s ease;
+}
+
+.rental-btn:hover {
+    background: var(--main-color);
+    transition: 0.4s ease;
+}
+
+
