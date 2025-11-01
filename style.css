@@ -407,4 +407,43 @@ header {
     transition: 0.4s ease;
 }
 
+/* ---------------TEAM---------------- */
+
+.team .heading {
+    text-align: center;
+}
+
+.team-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, auto));
+    gap: 1.5rem;
+}
+
+.team-box img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.team-box h2 {
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: var(--main-color);
+    margin-top: 1rem;
+}
+
+.team-box span {
+    font-size: 0.77rem;
+    color: var(--text-alter-color);
+    font-family: var(--poppins-font);
+}
+
+.team-box p {
+    font-size: 0.88rem;
+    font-family: var(--poppins-font);
+    color: var(--text-alter-color);
+    margin-top: 8px;
+}
+
+
 
