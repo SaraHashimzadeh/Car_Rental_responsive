@@ -496,3 +496,18 @@ header {
     font-weight: 400;
     color: var(--text-alter-color);
 }
+
+.newsletter {
+    max-width: 1040px;
+    width: 90%;
+    margin: auto;
+}
+.newsletter h2 {
+    font-size: 3.5rem;
+    font-weight: 500;
+    align-items: center;
+}
+
+.newsletter p {
+    text-align: center;
+}
