@@ -25,6 +25,17 @@ body {
     background: var(--bg-color);
 }
 
+/* ------Custom Scroll Bar------ */
+
+html::-webkit-scrollbar {
+    width: 0.5rem;
+    background: transparent;
+}
+
+html::-webkit-scrollbar-thumb {
+    background: var(--main-color);
+}
+
 a {
     text-decoration: none;
 }
@@ -505,7 +516,8 @@ header {
 .newsletter h2 {
     font-size: 3.5rem;
     font-weight: 500;
-    align-items: center;
+    text-align: center;
+    margin-bottom: 8px;
 }
 
 .newsletter p {
@@ -676,5 +688,93 @@ header {
     }
     .menu-icon {
         display: flex;
+    }
+    .navbar {
+        position: absolute;
+        top: 110%;
+        left: 50%;
+        transform: translate(-50%);
+        width: 90vw;
+        background: var(--text-color);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px 0;
+        border-radius: 1rem;
+        clip-path: polygon(0 0, 100% 0, 0 0);
+        transition: 0.5s all cubic-bezier(0.075, 0.82, 0.165, 1);
+    }
+    .open-menu {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+        transition: 0.5s all cubic-bezier(0.075, 0.82, 0.165, 1);
+    }
+    .nav-link{
+        display: block;
+        margin: 1rem 0;
+    }
+
+    .home {
+        min-height: 440px;
+        padding-top: 8rem !important;
+    }
+
+    .home-img::before {
+        font-size: 5rem;
+        top: -34px;
+        letter-spacing: 1.2rem;
+    }
+
+    .newsletter h2 {
+        font-size: 2.1rem;
+    }
+
+    .newsletter p {
+        font-size: 0.94rem;
+    }
+}
+
+@media (max-width: 477px) {
+    .home-img {
+        width: 95%;
+        margin: auto;
+    }
+
+    .home-img::before {
+        font-size: 4rem;
+        top: -32px;
+        letter-spacing: 1rem;
+    }
+    .input-form {
+        flex-direction: column;
+        align-items: normal;
+    }
+
+    .input-box {
+        flex: none;
+    }
+
+    .input-border {
+        border-right: none;
+        padding: 0 0 10px;
+        border-bottom: 1px solid var(--text-alter-color);
+    }
+     .newsletter h2 {
+        font-size: 1.5rem;
+    }
+
+    .heading h2 {
+        font-size: 2rem;
+        font-weight: 500;
+    }
+    .review-content, .footer-content{
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 380px) {
+    .home-img::before {
+        font-size: 3.5rem;
+        top: -32px;
+        letter-spacing: 0.8rem;
     }
 }
