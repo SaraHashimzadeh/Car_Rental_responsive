@@ -44,6 +44,10 @@ img {
     width: 100%;
 }
 
+.content{
+    overflow: hidden;
+}
+
 .container {
     max-width: 1060px;
     margin: auto;
@@ -140,6 +144,7 @@ header {
     cursor: pointer;
     z-index: 200;
     transition: 0.3s;
+    display: none;
 }
 
 .menu-icon div {
@@ -202,6 +207,21 @@ header {
     top: -80px;
     color: #ffb18d;
     z-index: -1;
+    transform: translateX(-60px);
+    transition: transform 2.5s ease , opacity 2.5s ease;
+    animation: revealfromright 2.5s ease forwards;
+    animation-delay: 0.4s;
+}
+
+@keyframes revealfromright {
+    0%{
+        opacity: 0;
+        transform: translateX(-60px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0px);
+    }
 }
 
 .input-form {

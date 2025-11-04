@@ -23,5 +23,20 @@ window.onload = () => {
     )
     .toISOString()
     .split('T')[0];
-}
+};
+
+
+//Scroll Reveal Animation
+
+const animate = ScrollReveal({
+    origin:'top',
+    distance: '60px',
+    duration: '2500',
+    delay: '400',
+})
+
+animate.reveal(".nav, .heading");
+animate.reveal(".home-img img", {origin:'right'});
+animate.reveal(".input-form", {origin:'bottom'});
+animate.reveal(".trend-box, .rental-box, .team-box, .t-box, .newsletter", {interval: 100});
     
